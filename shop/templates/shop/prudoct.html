@@ -1,0 +1,268 @@
+{% extends 'header.html' %}
+
+{% block title %}{{ prudoct.name }}{% endblock title %}
+
+
+{% block content %}
+<div class="relative">
+<!-- Slider -->
+  <div data-hs-carousel='{
+      "loadingClasses": "opacity-0"
+    }' class="relative flex items-start ">
+    <div class="hs-carousel relative overflow-hidden w-[30%] h-[30rem] bg-white rounded-lg">
+      <div class="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
+        <div class="hs-carousel-slide">
+          <div class="flex justify-center h-full bg-gray-100 p-6 dark:bg-neutral-900">
+            <span class="self-center text-4xl text-gray-800 transition duration-700 dark:text-white">First slide</span>
+          </div>
+        </div>
+        <div class="hs-carousel-slide">
+          <div class="flex justify-center h-full bg-gray-200 p-6 dark:bg-neutral-800">
+            <span class="self-center text-4xl text-gray-800 transition duration-700 dark:text-white">Second slide</span>
+          </div>
+        </div>
+        <div class="hs-carousel-slide">
+          <div class="flex justify-center h-full bg-gray-300 p-6 dark:bg-neutral-700">
+            <span class="self-center text-4xl text-gray-800 transition duration-700 dark:text-white">Third slide</span>
+          </div>
+        </div>
+        <div class="hs-carousel-slide">
+          <div class="flex justify-center h-full bg-gray-100 p-6 dark:bg-neutral-900">
+            <span class="self-center text-4xl text-gray-800 transition duration-700 dark:text-white">Fourth slide</span>
+          </div>
+        </div>
+        <div class="hs-carousel-slide">
+          <div class="flex justify-center h-full bg-gray-200 p-6 dark:bg-neutral-800">
+            <span class="self-center text-4xl text-gray-800 transition duration-700 dark:text-white">Fifth slide</span>
+          </div>
+        </div>
+        <div class="hs-carousel-slide">
+          <div class="flex justify-center h-full bg-gray-300 p-6 dark:bg-neutral-700">
+            <span class="self-center text-4xl text-gray-800 transition duration-700 dark:text-white">Sixth slide</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hs-carousel-pagination absolute bottom-3 start-0 w-full overflow-x-auto">
+        <div class="flex flex-row items-center gap-x-2 px-2">
+          <div class="hs-carousel-pagination-item shrink-0 border border-gray-200 rounded-md overflow-hidden cursor-pointer w-37.5 h-12.5 hs-carousel-active:border-blue-400 dark:border-neutral-700">
+            <div class="flex justify-center h-full bg-gray-100 p-2 dark:bg-neutral-900">
+              <span class="self-center text-xs text-gray-800 transition duration-700 dark:text-white">First slide</span>
+            </div>
+          </div>
+          <div class="hs-carousel-pagination-item shrink-0 border border-gray-200 rounded-md overflow-hidden cursor-pointer w-37.5 h-12.5 hs-carousel-active:border-blue-400 dark:border-neutral-700">
+            <div class="flex justify-center h-full bg-gray-200 p-2 dark:bg-neutral-800">
+              <span class="self-center text-xs text-gray-800 transition duration-700 dark:text-white">Second slide</span>
+            </div>
+          </div>
+          <div class="hs-carousel-pagination-item shrink-0 border border-gray-200 rounded-md overflow-hidden cursor-pointer w-37.5 h-12.5 hs-carousel-active:border-blue-400 dark:border-neutral-700">
+            <div class="flex justify-center h-full bg-gray-300 p-2 dark:bg-neutral-700">
+              <span class="self-center text-xs text-gray-800 transition duration-700 dark:text-white">Third slide</span>
+            </div>
+          </div>
+          <div class="hs-carousel-pagination-item shrink-0 border border-gray-200 rounded-md overflow-hidden cursor-pointer w-37.5 h-12.5 hs-carousel-active:border-blue-400 dark:border-neutral-700">
+            <div class="flex justify-center h-full bg-gray-100 p-2 dark:bg-neutral-900">
+              <span class="self-center text-xs text-gray-800 transition duration-700 dark:text-white">Fourth slide</span>
+            </div>
+          </div>
+          <div class="hs-carousel-pagination-item shrink-0 border border-gray-200 rounded-md overflow-hidden cursor-pointer w-37.5 h-12.5 hs-carousel-active:border-blue-400 dark:border-neutral-700">
+            <div class="flex justify-center h-full bg-gray-200 p-2 dark:bg-neutral-800">
+              <span class="self-center text-xs text-gray-800 transition duration-700 dark:text-white">Fifth slide</span>
+            </div>
+          </div>
+          <div class="hs-carousel-pagination-item shrink-0 border border-gray-200 rounded-md overflow-hidden cursor-pointer w-37.5 h-12.5 hs-carousel-active:border-blue-400 dark:border-neutral-700">
+            <div class="flex justify-center h-full bg-gray-300 p-2 dark:bg-neutral-700">
+              <span class="self-center text-xs text-gray-800 transition duration-700 dark:text-white">Sixth slide</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button type="button" class="hs-carousel-prev hs-carousel-disabled:opacity-50 hs-carousel-disabled:pointer-events-none absolute inset-y-0 start-0 inline-flex justify-center items-center w-11.5 h-full text-gray-800 hover:bg-gray-800/10 focus:outline-hidden focus:bg-gray-800/10 rounded-s-lg dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10">
+        <span class="text-2xl" aria-hidden="true">
+          <svg class="shrink-0 size-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m15 18-6-6 6-6"></path>
+          </svg>
+        </span>
+        <span class="sr-only">Previous</span>
+      </button>
+      <button type="button" class="hs-carousel-next hs-carousel-disabled:opacity-50 hs-carousel-disabled:pointer-events-none absolute inset-y-0 end-0 inline-flex justify-center items-center w-11.5 h-full text-gray-800 hover:bg-gray-800/10 focus:outline-hidden focus:bg-gray-800/10 rounded-e-lg dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10">
+        <span class="sr-only">Next</span>
+        <span class="text-2xl" aria-hidden="true">
+          <svg class="shrink-0 size-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m9 18 6-6-6-6"></path>
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div><!-- End Slider -->
+<!-- Details -->
+  <div class="absolute top-0 left-[32%] w-[36%]">
+    <h2 class="font-medium text-5xl">Test</h2>
+    <hr class="border-t-2 w-full border-gray-400 my-4">
+    <div class="w-10 h-10 flex items-center justify-center rounded-full bg-yellow-400 text-white font-bold">4.2</div>
+    <h3 class="font-semibold text-4xl mt-6">Color</h3>
+
+    <div class="mt-4 ">
+      <div class="flex gap-x-6 mt-6">
+        <div>
+          <input type="radio" name="fruit" id="apple" class="hidden peer">
+          <label for="apple" class="bg-red-500 cursor-pointer px-6 py-3 border rounded-full 
+            peer-checked:border-blue-500 peer-checked:text-white peer-checked:border-4 peer-checked:
+            hover:border-blue-500 transition"></label>
+        </div>
+      </div>
+    </div>
+    <div class="mt-6">
+      <h3 class="font-semibold text-4xl mt-6">Feature</h3>
+      <div class="mt-4">
+        <span class="inline-flex items-center gap-x-1.5 py-7 px-20 mt-2 mr-2 rounded-md text-xs font-medium border border-gray-200 bg-white text-gray-800 shadow-2xs dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">Badge</span>
+        <span class="inline-flex items-center gap-x-1.5 py-7 px-20 mt-2 mr-2 rounded-md text-xs font-medium border border-gray-200 bg-white text-gray-800 shadow-2xs dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">Badge</span>
+        <span class="inline-flex items-center gap-x-1.5 py-7 px-20 mt-2 mr-2 rounded-md text-xs font-medium border border-gray-200 bg-white text-gray-800 shadow-2xs dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">Badge</span>
+        <span class="inline-flex items-center gap-x-1.5 py-7 px-20 mt-2 mr-2 rounded-md text-xs font-medium border border-gray-200 bg-white text-gray-800 shadow-2xs dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">Badge</span>
+        <span class="inline-flex items-center gap-x-1.5 py-7 px-20 mt-2 mr-2 rounded-md text-xs font-medium border border-gray-200 bg-white text-gray-800 shadow-2xs dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">Badge</span>
+        <span class="inline-flex items-center gap-x-1.5 py-7 px-20 mt-2 mr-2 rounded-md text-xs font-medium border border-gray-200 bg-white text-gray-800 shadow-2xs dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">Badge</span>
+      </div>
+      <div class="mt-4 flex items-center justify-center gap-4">
+        <hr class="w-[37%] border-t-2 border-gray-400">
+        <button type="button" class="py-4 px-16 whitespace-nowrap inline-flex gap-x-2 text-sm font-bold rounded-lg border border-black text-black hover:border-black hover:text-black focus:outline-hidden focus:border-black focus:text-black disabled:opacity-50 disabled:pointer-events-none">
+          All Feature
+        </button>
+        <hr class="w-[37%] border-t-2 border-gray-400">
+      </div>
+    </div>
+  </div><!-- End Details -->
+<!-- BuyForm -->
+  <div class="absolute top-[7%] left-[70%] border border-black p-2 rounded-md w-[25%] h-[60%]">
+    <div class="ml-[20px] mt-[30px]">
+      <h2 class="text-4xl">Seller</h2>
+      <h3 class="text-2xl mt-[20px]">Hirslm</h3>
+    </div>
+    <hr class="w-[95%] border-t-2 border-gray-400 mx-auto mt-4">
+    <div class="ml-[20px] mt-[10px] flex flex-col items-start gap-2">
+      <span class="text-lg text-gray-500">$ <span class="text-2xl font-bold text-black">49.99</span></span>
+      <button type="button" class="mt-[10px] py-5 px-[38.5%] inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 text-gray-500 hover:border-blue-600 hover:text-blue-600 focus:outline-hidden focus:border-blue-600 focus:text-blue-600 disabled:opacity-50 disabled:pointer-events-none dark:border-neutral-700 dark:text-neutral-400 dark:hover:text-blue-500 dark:hover:border-blue-600 dark:focus:text-blue-500 dark:focus:border-blue-600">
+        Add For Buy
+      </button>
+    </div>
+    <div class="flex flex-col items-start gap-2 ml-[20px] mt-5 mb-5">
+      <h3 class="text-xl font-medium">Garanty for 7 days</h3>
+    </div>
+    <hr class="w-[95%] border-t-2 border-gray-400 mx-auto">
+    <div class="flex flex-col items-start gap-2 ml-[20px] mt-5 mb-5">
+      <button type="button" class="hs-collapse-toggle inline-flex items-center gap-x-2 text-x font-medium rounded-lg border border-transparent text-black hover: focus:outline-hidden focus: disabled:opacity-50 disabled:pointer-events-none" id="hs-basic-collapse" aria-expanded="false" aria-controls="hs-basic-collapse-heading" data-hs-collapse="#hs-basic-collapse-heading">
+        How to send
+        <svg class="hs-collapse-open:rotate-180 shrink-0 size-4 text-black" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m6 9 6 6 6-6"></path>
+        </svg>
+      </button>
+      <div id="hs-basic-collapse-heading" class="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-basic-collapse">
+        <div class="mt-5">
+          <!-- Stepper -->
+          <ul class="relative flex flex-col md:flex-row gap-2">
+            <!-- Item -->
+            <li class="md:shrink md:basis-0 flex-1 group flex gap-x-2 md:block">
+              <div class="min-w-7 min-h-7 flex flex-col items-center md:w-full md:inline-flex md:flex-wrap md:flex-row text-xs align-middle">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                </svg>
+
+                <div class="mt-2 w-px h-full md:mt-0 md:ms-2 md:w-full md:h-px md:flex-1 bg-gray-200 group-last:hidden dark:bg-neutral-700"></div>
+              </div>
+              <div class="grow md:grow-0 md:mt-3 pb-5">
+                <span class="block text-sm font-medium text-gray-800 dark:text-white">
+                  Step
+                </span>
+                <p class="text-sm text-gray-500 dark:text-neutral-500">
+                  This is a description text.
+                </p>
+              </div>
+            </li>
+            <!-- End Item -->
+
+            <!-- Item -->
+            <li class="md:shrink md:basis-0 flex-1 group flex gap-x-2 md:block">
+              <div class="min-w-7 min-h-7 flex flex-col items-center md:w-full md:inline-flex md:flex-wrap md:flex-row text-xs align-middle">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v13h18V7H3zm0-4h18v4H3V3zm6 4V3m6 4V3m-6 8h6" />
+                </svg>
+
+                <div class="mt-2 w-px h-full md:mt-0 md:ms-2 md:w-full md:h-px md:flex-1 bg-gray-200 group-last:hidden dark:bg-neutral-700"></div>
+              </div>
+              <div class="grow md:grow-0 md:mt-3 pb-5">
+                <span class="block text-sm font-medium text-gray-800 dark:text-white">
+                  Step
+                </span>
+                <p class="text-sm text-gray-500 dark:text-neutral-500">
+                  This is a description text.
+                </p>
+              </div>
+            </li>
+            <!-- End Item -->
+
+            <!-- Item -->
+            <li class="md:shrink md:basis-0 flex-1 group flex gap-x-2 md:block">
+              <div class="min-w-7 min-h-7 flex flex-col items-center md:w-full md:inline-flex md:flex-wrap md:flex-row text-xs align-middle">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
+                </svg>
+
+                <div class="mt-2 w-px h-full md:mt-0 md:ms-2 md:w-full md:h-px md:flex-1 bg-gray-200 group-last:hidden dark:bg-neutral-700"></div>
+              </div>
+              <div class="grow md:grow-0 md:mt-3 pb-5">
+                <span class="block text-sm font-medium text-gray-800 dark:text-white">
+                  Step
+                </span>
+                <p class="text-sm text-gray-500 dark:text-neutral-500">
+                  This is a description text.
+                </p>
+              </div>
+            </li>
+            <!-- End Item -->
+          </ul>
+          <!-- End Stepper -->
+        </div>
+      </div>
+    </div>
+  </div><!--End BuyForm -->
+
+<!-- Specificatins -->
+  <div class="border-b-2 border-gray-200 dark:border-neutral-700 mt-[10rem]">
+    <nav id="tabs" class="-mb-0.5 flex justify-start space-x-6">
+      <a data-tab class="py-4 px-1 inline-flex items-center gap-2 border-b-2 border-transparent 
+        text-xl whitespace-nowrap text-gray-500 hover:text-blue-600">
+        Specificatins
+      </a>
+      <a data-tab class="py-4 px-1 inline-flex items-center gap-2 border-b-2 border-transparent 
+        text-xl whitespace-nowrap text-gray-500 hover:text-blue-600">
+        Comment
+      </a>
+    </nav>
+  </div><!-- End Specificatins -->
+  <div class="mt-[2%]">
+    <h2 class="text-xl border-b-2 border-black pb-2 inline-block">Specificatins</h2>
+    <div class="mt-[2%]">
+      <h3 class="inline-flex ">Specificatins</h3>
+      <div class="inline-flex ml-[10%] flex flex-col gap-2">
+        <div class="">dsdsdsds</div>
+        <div class="">dsdsdsds</div>
+        <div class="">dsdsdsds</div>
+        <div class="">dsdsdsds</div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+  <!-- Script -->
+
+<!--End Script -->
+
+
+{% endblock content %}
+    
+
+{% block script %}
+  <script src="../static/js/script.js"></script>
+{% endblock script %}
+  
