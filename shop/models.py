@@ -15,8 +15,8 @@ class ProductModel(models.Model):
     name = models.CharField()
     product_img = models.ImageField(null=True,blank=True, upload_to="Product_image_folder/%Y/%m/%d/")
     Currency_choices = [
-        ("IRR" , "ریال"),
-        ("IRT" , "تومان")
+        ("EUR" , "€"),
+        ("USD" , "$")
     ]
     price = models.DecimalField(
         max_digits=10,
@@ -24,7 +24,7 @@ class ProductModel(models.Model):
     )
     currency = models.CharField(
         choices=Currency_choices,
-        default="IRT"
+        default="USD"
     )
     description = models.TextField()
     attribute = models.ManyToManyField(AttributeModel)
